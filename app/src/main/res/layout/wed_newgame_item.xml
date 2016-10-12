@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/wed_iv_bg"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="200dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="@color/black_trans"
+        android:layout_alignBottom="@id/wed_iv_bg">
+
+        <TextView
+            android:id="@+id/wed_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/whilt"
+            android:layout_alignParentTop="true"
+            android:text="title"/>
+        <ImageView
+            android:id="@+id/wed_iv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/wed_titel"/>
+        <TextView
+            android:id="@+id/wed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wed_titel"
+            android:textColor="@color/whilt"
+            android:layout_toRightOf="@id/wed_iv_time"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/wed_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

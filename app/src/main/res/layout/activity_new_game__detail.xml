@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yaokun.giftspirit.activity.NewGame_DetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/newgame_detail_icon"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black_trans">
+        <ImageView
+            android:id="@+id/newgame_detail_titel_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/newgame_detail_titel_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tttt"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/newgame_detail_titel_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_share"/>
+
+    </RelativeLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/newgame_detail_attoricon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/newgame_detail_shuoming"/>
+    <TextView
+        android:id="@+id/newgame_detail_shuoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@color/whilt"
+        android:background="@drawable/tv_bg"
+        android:layout_toRightOf="@id/newgame_detail_attoricon"
+        android:layout_alignBottom="@id/newgame_detail_icon"/>
+
+    <com.yaokun.giftspirit.activity.MyGridView
+        android:id="@+id/newgame_detail_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/newgame_detail_shuoming">
+
+    </com.yaokun.giftspirit.activity.MyGridView>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

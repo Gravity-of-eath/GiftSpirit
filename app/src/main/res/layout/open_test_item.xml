@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/test_child_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_home"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:id="@+id/test_child_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="名称"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/test_child_icon"/>
+    <TextView
+        android:id="@+id/provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/test_child_icon"
+        android:layout_centerVertical="true"
+        android:text="运营商:"/>
+    <TextView
+        android:id="@+id/test_yunys_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/provider"
+        android:layout_centerVertical="true"
+        android:text="运营商:"/>
+    <ImageView
+        android:id="@+id/tgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/test_child_icon"
+        android:layout_toRightOf="@+id/test_child_icon"
+        android:layout_marginBottom="3dp"
+
+        android:layout_marginRight="5dp"
+        android:src="@drawable/g_biao"/>
+    <TextView
+        android:id="@+id/test_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_titel_bg"
+        android:layout_alignBottom="@+id/test_child_icon"
+        android:layout_toRightOf="@+id/tgb"
+        android:text="2015-12-12"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:background="@drawable/btn_bd"
+        android:textColor="@color/whilt"
+        android:text="查看"/>
+
+</RelativeLayout>

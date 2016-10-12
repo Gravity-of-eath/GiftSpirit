@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GiftSpirit</string>
+    <string name="titel_name">礼包精灵</string>
+    <string-array name="main_menu">
+        <item>主页</item>
+        <item>我的礼包</item>
+        <item>提个建议</item>
+        <item>关于我们</item>
+    </string-array>
+    <array name="icons">
+        <item>@drawable/icon_home</item>
+        <item>@drawable/my_gift</item>
+        <item>@drawable/send_email</item>
+        <item>@drawable/about_me</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

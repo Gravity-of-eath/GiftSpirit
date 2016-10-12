@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yaokun.giftspirit.fragment.Open_Open">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ExpandableListView
+        android:id="@+id/open_open_explistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ExpandableListView>
+
+</FrameLayout>

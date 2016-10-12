@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilt"
+    tools:context="com.yaokun.giftspirit.activity.DetialActivity">
+
+    <RelativeLayout
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_titel_bg">
+
+        <ImageView
+            android:id="@+id/detail_toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/detail_toolbar_titel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/titel_name"
+            android:textColor="@color/whilt"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/detial_toolbar_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_share"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_top"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/detail_toolbar"
+        android:background="@drawable/lb_bg">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/detail_user_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_launcher"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_trans">
+            <TextView
+                android:id="@+id/detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="有效期:"
+                android:textColor="@color/whilt"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/detail_time_to"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="有效期"
+                android:textColor="@color/whilt"
+                android:layout_toRightOf="@id/detail_time"/>
+            <TextView
+                android:id="@+id/detail_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="数量"
+                android:textColor="@color/main_titel_bg"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:id="@+id/detail_number_shengyu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="礼包剩余:"
+                android:textColor="@color/whilt"
+                android:layout_toLeftOf="@+id/detail_number"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="礼包说明"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/detail_top"/>
+    <TextView
+        android:id="@+id/detail_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/detail_lb"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignRight="@+id/detail_lb"
+        android:layout_alignLeft="@+id/detail_lb"
+        android:background="@color/green"/>
+
+<TextView
+    android:id="@+id/detail_explains"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="兑换方式------------"
+    android:layout_margin="10dp"
+    android:layout_below="@+id/detail_line1"/>
+
+    <TextView
+        android:id="@+id/detail_fs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兑换方式"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/detail_explains"/>
+    <TextView
+        android:id="@+id/detail_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/detail_fs"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignRight="@+id/detail_fs"
+        android:layout_alignLeft="@+id/detail_fs"
+        android:background="@color/green"/>
+    <TextView
+        android:id="@+id/detail_descs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="兑换方式------------"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/detail_line2"/>
+
+
+    <RelativeLayout
+        android:id="@+id/detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whilt">
+
+        <Button
+            android:id="@+id/detail_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即领取"
+            android:layout_margin="10dp"
+            android:textColor="@color/whilt"
+            android:background="@drawable/btn_bd"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/detail_bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_gift_green"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_titel_bg"
+        android:layout_alignTop="@id/detail_bottom"/>
+</RelativeLayout>

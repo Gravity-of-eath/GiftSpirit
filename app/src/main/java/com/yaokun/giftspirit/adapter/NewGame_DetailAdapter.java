@@ -57,7 +57,7 @@ public class NewGame_DetailAdapter extends BaseAdapter {
         }else {
             vh= (VH) convertView.getTag();
         }
-        Picasso.with(context).load(Contast.BASE+bean.getList().get(position).getIconurl()).into(vh.icon);
+        Picasso.with(context).load(Contast.BASE+bean.getList().get(position).getIconurl()).error(R.drawable.launcher).into(vh.icon);
         vh.name.setText(bean.getList().get(position).getAppname());
         vh.type.setText(bean.getList().get(position).getTypename());
         vh.size.setText(bean.getList().get(position).getAppsize());

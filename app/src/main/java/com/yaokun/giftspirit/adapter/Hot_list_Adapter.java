@@ -58,7 +58,7 @@ public class Hot_list_Adapter extends BaseAdapter {
         }else {
             hap= (HAP) convertView.getTag();
         }
-        Picasso.with(context).load(Contast.BASE+list.get(position).getLogo()).into(hap.icon);
+        Picasso.with(context).load(Contast.BASE+list.get(position).getLogo()).error(R.drawable.launcher).into(hap.icon);
         hap.name.setText(list.get(position).getName());
         hap.type.setText(list.get(position).getTypename());
         hap.size.setText(list.get(position).getSize());

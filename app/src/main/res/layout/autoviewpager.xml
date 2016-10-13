@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/black_trans"
+        android:background="@color/transfor"
         android:layout_alignBottom="@+id/auto_viewpager"
         android:gravity="center">
     </LinearLayout>

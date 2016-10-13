@@ -43,7 +43,7 @@ public class MyPagerAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
         ImageView imageView=new ImageView(context);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        Picasso.with(context).load(Contast.BASE+adBeen.get(position).getIconurl()).into(imageView);
+        Picasso.with(context).load(Contast.BASE+adBeen.get(position).getIconurl()).error(R.drawable.launcher).into(imageView);
         container.addView(imageView);
         return imageView;
     }

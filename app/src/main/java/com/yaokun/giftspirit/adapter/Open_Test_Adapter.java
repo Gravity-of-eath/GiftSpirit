@@ -63,7 +63,7 @@ public class Open_Test_Adapter extends BaseAdapter {
             vh= (VH) convertView.getTag();
         }
        List<OpenTest.InfoBean> list= opentest.getInfo();
-        Picasso.with(context).load(Contast.BASE+list.get(position).getIconurl()).into(vh.icon);
+        Picasso.with(context).load(Contast.BASE+list.get(position).getIconurl()).error(R.drawable.launcher).into(vh.icon);
         vh.name.setText(list.get(position).getGname());
         vh.yunyings.setText(list.get(position).getOperators());
         vh.time.setText(list.get(position).getAddtime());

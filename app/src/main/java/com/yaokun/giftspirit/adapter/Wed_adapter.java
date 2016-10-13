@@ -58,7 +58,7 @@ public class Wed_adapter extends BaseAdapter {
         } else {
             vh = (VH) convertView.getTag();
         }
-        Picasso.with(context).load(Contast.BASE+wedBean.getList().get(position).getIconurl()).into(vh.imageView);
+        Picasso.with(context).load(Contast.BASE+wedBean.getList().get(position).getIconurl()).error(R.drawable.launcher).into(vh.imageView);
         vh.textView.setText(wedBean.getList().get(position).getName());
         vh.time.setText(wedBean.getList().get(position).getAddtime());
         vh.iv_time.setImageResource(R.drawable.g_biao);

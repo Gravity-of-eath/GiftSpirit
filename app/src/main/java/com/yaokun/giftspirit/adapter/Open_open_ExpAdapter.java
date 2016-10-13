@@ -130,7 +130,7 @@ public class Open_open_ExpAdapter implements ExpandableListAdapter {
             cvh = (CVH) convertView.getTag();
         }
         OpenBean.InfoBean bean = listHashMap.get(times.get(groupPosition)).get(childPosition);
-        Picasso.with(context).load(Contast.BASE+bean.getIconurl()).into(cvh.icon);
+        Picasso.with(context).load(Contast.BASE+bean.getIconurl()).error(R.drawable.launcher).into(cvh.icon);
         cvh.name.setText(bean.getGname());
         Log.e("Open_open_ExpAdapter", "getChildView==" +listHashMap.get(times.get(groupPosition)).size());
         cvh.time.setText(bean.getStarttime());

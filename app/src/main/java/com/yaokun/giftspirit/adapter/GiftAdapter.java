@@ -60,7 +60,7 @@ public class GiftAdapter extends BaseAdapter {
             viewHoder= (ViewHoder) convertView.getTag();
         }
         GiftBean.ListBean bean=listBean.get(position);
-        Picasso.with(context).load(Contast.BASE+bean.getIconurl()).into(viewHoder.icon);
+        Picasso.with(context).load(Contast.BASE+bean.getIconurl()).error(R.drawable.launcher).into(viewHoder.icon);
         viewHoder.name.setText(bean.getGname());
         viewHoder.type.setText(bean.getGiftname());
         viewHoder.surplus.setText(String.valueOf(bean.getNumber()));

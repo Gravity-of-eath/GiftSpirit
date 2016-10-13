@@ -59,7 +59,7 @@ public class Hot_GridView_Adapter extends BaseAdapter {
         } else {
             gvh = (GVH) convertView.getTag();
         }
-        Picasso.with(context).load(Contast.BASE+list.get(position).getLogo()).into(gvh.icon);
+        Picasso.with(context).load(Contast.BASE+list.get(position).getLogo()).error(R.drawable.launcher).into(gvh.icon);
         gvh.textView.setText(list.get(position).getName());
 
         return convertView;

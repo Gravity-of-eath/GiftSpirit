@@ -57,7 +57,7 @@ public class Wed_Detail_Adapter extends BaseAdapter {
         }else {
             vh= (VH) convertView.getTag();
         }
-        Picasso.with(context).load(Contast.BASE+wed_detailbean.getList().get(position).getAppicon()).into(vh.icon);
+        Picasso.with(context).load(Contast.BASE+wed_detailbean.getList().get(position).getAppicon()).error(R.drawable.launcher).into(vh.icon);
         vh.name.setText(wed_detailbean.getList().get(position).getAppname());
         return convertView;
     }

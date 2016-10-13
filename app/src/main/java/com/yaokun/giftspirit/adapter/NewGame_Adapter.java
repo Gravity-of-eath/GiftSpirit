@@ -57,8 +57,8 @@ public class NewGame_Adapter extends BaseAdapter {
         } else {
             vh = (VH) convertView.getTag();
         }
-        Picasso.with(context).load(Contast.BASE + bean.getList().get(position).getIconurl()).into(vh.imageView);
-        Picasso.with(context).load(Contast.BASE + "/" + bean.getList().get(position).getAuthorimg()).into(vh.circleImageView);
+        Picasso.with(context).load(Contast.BASE + bean.getList().get(position).getIconurl()).error(R.drawable.launcher).into(vh.imageView);
+        Picasso.with(context).load(Contast.BASE + "/" + bean.getList().get(position).getAuthorimg()).error(R.drawable.launcher).into(vh.circleImageView);
         vh.textView.setText(bean.getList().get(position).getName());
         return convertView;
     }
